@@ -24,16 +24,30 @@ public class Mamifero extends Animal{
     }
 
     public double getVelocidadMovimiento(){
+
         return this.velocidadMovimiento;
     }
     public void setVelocidadMovimiento(double velocidadMovimiento){
+
         this.velocidadMovimiento = velocidadMovimiento;
     }
 
     public String getDieta(){
+
         return this.dieta;
     }
     public void setDieta(String dieta){
+
         this.dieta = dieta;
+    }
+
+
+    //Constructor
+    public Mamifero(String nombre, int edad, String genero, double peso,String habito, double velocidadMovimiento, String dieta){
+        super(nombre, edad, genero);
+        setPeso(peso);
+        setHabito(habito);
+        setVelocidadMovimiento(velocidadMovimiento);
+        setDieta(dieta);
     }
 }

@@ -3,7 +3,7 @@ package animals.JorgeSoft.com;
 public class Animal {
     //Variables
     public String nombre;
-    public String edad;
+    public int edad;
     public String genero;
 
     //Gets and Sets
@@ -14,17 +14,34 @@ public class Animal {
         this.nombre = name;
     }
 
-    public String getEdad(){
-        return this.nombre;
+    public int getEdad(){
+        return this.edad;
     }
-    public void setEdad(String edad){
+    public void setEdad(int edad){
+
         this.edad = edad;
     }
 
     public String getGenero(){
+
         return this.nombre;
     }
     public void setGenero(String genero){
+
         this.genero = genero;
     }
+
+    //Constructor
+    public Animal(){
+
+    }
+
+    public Animal(String nombre, int edad, String genero){
+        setNombre(nombre);
+        setEdad(edad);
+        setGenero(genero);
+    }
+
+    //Method
+
 }

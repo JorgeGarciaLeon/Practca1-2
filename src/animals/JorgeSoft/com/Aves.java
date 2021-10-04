@@ -28,5 +28,13 @@ public class Aves extends Animal{
     public void setTipoDePata(String tipoDePata){
         this.tipoDePata = tipoDePata;
     }
-    
+
+    //Constructor
+    public Aves(String nombre, int edad, String genero, double altitudMaxima, String colorPlumaje, String tipoDePata){
+        super(nombre, edad, genero);
+        setAltitudMaxima(altitudMaxima);
+        setColorPlumaje(colorPlumaje);
+        setTipoDePata(tipoDePata);
+    }
+
 }

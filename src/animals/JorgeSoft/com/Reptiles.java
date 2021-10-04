@@ -29,4 +29,12 @@ public class Reptiles extends Animal{
         this.velocidadDesplazamiento = velocidadDesplazamiento;
     }
 
+    //Constructor
+    public Reptiles(String nombre, int edad, String genero, double temperaturaCorporal,String colorEscama, double velocidadDesplazamiento){
+        super(nombre, edad, genero);
+        setTemperaturaCorporal(temperaturaCorporal);
+        setColorEscama(colorEscama);
+        setVelocidadDesplazamiento(velocidadDesplazamiento);
+    }
+
 }
