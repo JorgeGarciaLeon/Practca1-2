@@ -41,4 +41,8 @@ public class Zoologico {
             System.out.println(getAnimales().get(i));
         }
     }
+
+    public void addAnimalArray(ArrayList<Animal> listaAnimales){
+        setAnimales(listaAnimales);
+    }
 }
