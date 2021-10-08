@@ -1,4 +1,4 @@
-package animals.JorgeSoft.com;
+package com.JorgeSoft.Animals;
 
 public class Gallinacea extends Aves{
     public Gallinacea(String nombre, int edad, String genero, double altitudMaxima, String colorPlumaje, String tipoDePata) {

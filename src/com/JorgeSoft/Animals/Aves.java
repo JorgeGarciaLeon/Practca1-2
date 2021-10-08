@@ -1,4 +1,4 @@
-package animals.JorgeSoft.com;
+package com.JorgeSoft.Animals;
 
 public class Aves extends Animal{
 
