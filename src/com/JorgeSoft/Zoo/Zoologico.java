@@ -1,9 +1,6 @@
 package com.JorgeSoft.Zoo;
 
-import com.JorgeSoft.Animals.Animal;
-import com.JorgeSoft.Animals.Pajaro;
-import com.JorgeSoft.Animals.Perro;
-import com.JorgeSoft.Animals.Serpiente;
+import com.JorgeSoft.Animals.*;
 
 import java.util.ArrayList;
 
@@ -96,8 +93,51 @@ public class Zoologico {
                         break;
                 }
             }
+        }else if(numAnimales/2 < numHuecos){
+            String [] animales = {"Gallinacea","Gato","Leon","Pajaro","Perro","Rapace","Saurio","Serpiente","Tortuga"};
+            for (int i = 0; i < numAnimales; i++) {
+                switch (animales[i]){
+                    case "Gallinacea":
+                        Animal gallinacea = new Gallinacea(getName(),getAge(),getGen(),getMaxAltura(),getColor(), getTypeOfLeg());
+                        Animales.add(gallinacea);
+                        break;
+                    case "Gato":
+                        Animal Gato = new Gato(getName(),getAge(),getGen(),getWeight(),getHabit(),getSpeed(),getDiet());
+                        Animales.add(Gato);
+                        break;
+                    case "Leon":
+                        Animal Leon = new Leon(getName(),getAge(),getGen(),getWeight(),getHabit(),getSpeed(),getDiet());
+                        Animales.add(Leon);
+                        break;
+                    case "Pajaro":
+                        Animal Pajaro = new Pajaro(getName(),getAge(),getGen(),getMaxAltura(),getColor(), getTypeOfLeg());
+                        Animales.add(Pajaro);
+                        break;
+                    case "Perro":
+                        Animal Perro = new Perro(getName(),getAge(),getGen(),getWeight(),getHabit(),getSpeed(),getDiet());
+                        Animales.add(Perro);
+                        break;
+                    case "Rapace":
+                        Animal Rapace = new Rapace(getName(),getAge(),getGen(),getMaxAltura(),getColor(), getTypeOfLeg());
+                        Animales.add(Rapace);
+                        break;
+                    case "Saurio":
+                        Animal Saurio = new Saurio(getName(),getAge(),getGen(),getTemperature(),getColor(),getSpeedReptile());
+                        Animales.add(Saurio);
+                        break;
+                    case "Serpiente":
+                        Animal Serpiente = new Serpiente(getName(),getAge(),getGen(),getTemperature(),getColor(),getSpeedReptile());
+                        Animales.add(Serpiente);
+                        break;
+                    case "Tortuga":
+                        Animal Tortuga = new Tortuga(getName(),getAge(),getGen(),getTemperature(),getColor(),getSpeedReptile());
+                        Animales.add(Tortuga);
+                        break;
+                }
+
+            }
         }else{
-            System.out.println("La configuración del ZOO que ha añadido no es posible");
+            System.out.println("La configuración del ZOO no se puede generar");
         }
 
         for (int i = 0; i <Animales.size() ; i++) {
